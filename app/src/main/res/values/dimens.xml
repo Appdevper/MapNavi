@@ -1,0 +1,38 @@
+<resources>
+
+    <dimen name="topbar_height_size">64dp</dimen>
+    <dimen name="topbar_member_width_size">58dp</dimen>
+    <dimen name="topbar_member_logo_size">32dp</dimen>
+
+    <dimen name="home_item_height_size">70dp</dimen>
+
+    <!-- Text size -->
+    <dimen name="default_size_header_extra_large">30sp</dimen>
+    <dimen name="default_size_header_extra">28sp</dimen>
+    <dimen name="default_size_header_large">24sp</dimen>
+    <dimen name="default_size_header_normal">20sp</dimen>
+    <dimen name="default_size_header_small">18sp</dimen>
+    <dimen name="default_size_header_extra_small">16sp</dimen>
+
+    <dimen name="default_size_body_large">20sp</dimen>
+    <dimen name="default_size_body_normal">18sp</dimen>
+    <dimen name="default_size_body_small">16sp</dimen>
+    <dimen name="default_size_body_extra_small">14sp</dimen>
+
+    <dimen name="default_padding_extra_large">20dp</dimen>
+    <dimen name="default_padding_large">10dp</dimen>
+    <dimen name="default_padding_normal">8dp</dimen>
+    <dimen name="default_padding_small">4dp</dimen>
+    <dimen name="default_padding_extra_small">2dp</dimen>
+
+    <dimen name="default_margin_extra_large">20dp</dimen>
+    <dimen name="default_margin_large">10dp</dimen>
+    <dimen name="default_margin_normal">8dp</dimen>
+    <dimen name="default_margin_small">4dp</dimen>
+    <dimen name="default_margin_extra_small">2dp</dimen>
+
+    <dimen name="default_elevation">4dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+
+
+</resources>

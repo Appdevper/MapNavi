@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_all"
+        android:icon="@drawable/ic_action_menu1"
+        android:title="ทั้งหมด"/>
+    <item
+        android:id="@+id/action_store"
+        android:icon="@drawable/ic_action_menu4"
+        android:title="ท่องเที่ยว"/>
+    <item
+        android:id="@+id/action_bundar"
+        android:icon="@drawable/ic_action_menu2"
+        android:title="วัด"/>
+    <item
+        android:id="@+id/action_hotel"
+        android:icon="@drawable/ic_action_menu5"
+        android:title="ที่พัก"/>
+    <item
+        android:id="@+id/action_food"
+        android:icon="@drawable/ic_action_menu3"
+        android:title="ร้านอาหาร"/>
+
+</menu>

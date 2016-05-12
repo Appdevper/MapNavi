@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/lyProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/xml_ripple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/default_padding_large"
+                    android:paddingTop="@dimen/default_padding_large"
+                    app:layout_widthPercent="50%">
+
+                    <ImageView
+                        android:id="@+id/imgProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_item_height_size"
+                        android:gravity="center"
+                        android:src="@drawable/menu1"/>
+
+                    <TextView
+                        android:id="@+id/tvProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgProduct"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/default_padding_normal"
+                        android:paddingRight="@dimen/default_padding_normal"
+                        android:text="@string/label_all"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyPromotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/xml_ripple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/default_padding_large"
+                    android:paddingTop="@dimen/default_padding_large"
+                    app:layout_widthPercent="50%">
+
+                    <ImageView
+                        android:id="@+id/imgPromotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_item_height_size"
+                        android:gravity="center"
+                        android:src="@drawable/menu4"/>
+
+                    <TextView
+                        android:id="@+id/tvPromotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgPromotion"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/default_padding_normal"
+                        android:paddingRight="@dimen/default_padding_normal"
+                        android:text="@string/label_shop"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyCheckIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/lyProduct"
+                    android:background="@drawable/xml_ripple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/default_padding_large"
+                    android:paddingTop="@dimen/default_padding_large"
+                    app:layout_widthPercent="50%">
+
+                    <ImageView
+                        android:id="@+id/imgCheckIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_item_height_size"
+                        android:gravity="center"
+                        android:src="@drawable/menu5"/>
+
+                    <TextView
+                        android:id="@+id/tvCheckIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgCheckIn"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/default_padding_normal"
+                        android:paddingRight="@dimen/default_padding_normal"
+                        android:text="@string/label_hotel"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/lyProduct"
+                    android:background="@drawable/xml_ripple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/default_padding_large"
+                    android:paddingTop="@dimen/default_padding_large"
+                    app:layout_widthPercent="50%">
+
+                    <ImageView
+                        android:id="@+id/imgStore"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_item_height_size"
+                        android:gravity="center"
+                        android:src="@drawable/menu2"/>
+
+                    <TextView
+                        android:id="@+id/tvStore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgStore"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/default_padding_normal"
+                        android:paddingRight="@dimen/default_padding_normal"
+                        android:text="@string/label_bud"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyPresent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/lyStore"
+                    android:background="@drawable/xml_ripple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/default_padding_large"
+                    android:paddingTop="@dimen/default_padding_large"
+                    app:layout_widthPercent="50%">
+
+                    <ImageView
+                        android:id="@+id/imgPresent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_item_height_size"
+                        android:gravity="center"
+                        android:src="@drawable/menu7"/>
+
+                    <TextView
+                        android:id="@+id/tvPresent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgPresent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/default_padding_normal"
+                        android:paddingRight="@dimen/default_padding_normal"
+                        android:text="@string/label_news"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/lyStore"
+                    android:background="@drawable/xml_ripple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/default_padding_large"
+                    android:paddingTop="@dimen/default_padding_large"
+                    app:layout_widthPercent="50%">
+
+                    <ImageView
+                        android:id="@+id/imgPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_item_height_size"
+                        android:gravity="center"
+                        android:src="@drawable/menu3"/>
+
+                    <TextView
+                        android:id="@+id/tvPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgPoint"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/default_padding_normal"
+                        android:paddingRight="@dimen/default_padding_normal"
+                        android:text="@string/label_food"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lyPoint"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/xml_ripple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/default_padding_large"
+                    android:paddingTop="@dimen/default_padding_large"
+                    app:layout_widthPercent="50%">
+
+                    <ImageView
+                        android:id="@+id/imgContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_item_height_size"
+                        android:gravity="center"
+                        android:src="@drawable/menu6"/>
+
+                    <TextView
+                        android:id="@+id/tvContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgContact"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/default_padding_normal"
+                        android:paddingRight="@dimen/default_padding_normal"
+                        android:text="@string/lavel_info"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="8dp"
+        app:elevation="0dp"
+        android:src="@drawable/ic_menu"
+        app:backgroundTint="@color/color_white"
+        app:layout_behavior="com.appdevper.mapnavi.util.ScrollAwareFABBehavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

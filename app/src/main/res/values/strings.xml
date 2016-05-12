@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">maeklong travel</string>
+    <string name="label_all">ทั้งหมด</string>
+    <string name="label_shop">ท่องเที่ยว</string>
+    <string name="label_bud">วัด</string>
+    <string name="label_hotel">ที่พัก</string>
+    <string name="label_food">ร้านอาหาร</string>
+    <string name="label_news">ข่าวสาร</string>
+    <string name="lavel_info">ติดต่อ</string>
+    <string name="lavel_contact">  สำนักงานการท่องเที่ยวและกีฬาจังหวัดสมุทรสงคราม(Samutsongkhram Provincial Office of Tourism and Sports) \n\n  ศาลากลางจังหวัดสมุทรสงคราม ชั้น 5 ถ.เอกชัย ต.แม่กลอง อ.เมือง จ.สมุทรสงคราม 75000\n\nโทร./แฟ็กซ์ 0-3471-7213</string>
+</resources>
