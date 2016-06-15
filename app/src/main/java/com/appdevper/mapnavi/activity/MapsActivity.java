@@ -19,6 +19,7 @@ import android.support.v4.app.ActivityCompat;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
@@ -146,7 +147,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         navi = true;
 
                         tvDes.setVisibility(View.VISIBLE);
-                        int dis = Integer.parseInt(distance) /1000;
+                        int dis = Integer.parseInt(distance) / 1000;
                         String ss = name + " ระยะทาง " + dis + " KM";
                         tvDes.setText(ss);
                     } else if (btnRequestDirection.getText().toString().equals("Stop")) {
@@ -345,6 +346,18 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         if (navi) {
             mMap.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
+
+            final Place place = checkDistance(location);
+            if (place != null) {
+                String msg = "คุณต้องการเดินทางไปที่ " + place.name + "หรือไม่";
+                Utils.showDialog(this, "แจ้งเตือน", msg, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        destination = place.getLocation();
+                        requestDirection();
+                    }
+                });
+            }
         }
     }
 
@@ -365,12 +378,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Place checkDistance(LatLng latLng) {
 
         for (int i = 0; i < placeResponse.placeList.size(); i++) {
-            if (!placeResponse.placeList.get(i).isCheck) {
+            //if (!placeResponse.placeList.get(i).isCheck) {
                 if (Utils.distance(placeResponse.placeList.get(i).latitude, placeResponse.placeList.get(i).longitude, latLng.latitude, latLng.longitude) <= 2) {
-                    placeResponse.placeList.get(i).isCheck = true;
+                    //placeResponse.placeList.get(i).isCheck = true;
                     return placeResponse.placeList.get(i);
                 }
-            }
+            //}
         }
         return null;
     }

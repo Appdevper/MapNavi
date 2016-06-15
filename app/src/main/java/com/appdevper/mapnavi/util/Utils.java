@@ -10,8 +10,8 @@ import android.view.View;
  * Created by worawit on 3/6/16.
  */
 public class Utils {
-    public static void showDialog(final Activity act, String header, String msg) {
-        new AlertDialog.Builder(act)
+    public static AlertDialog showDialog(final Activity act, String header, String msg) {
+        return new AlertDialog.Builder(act)
                 .setTitle(header)
                 .setMessage(msg)
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
@@ -23,8 +23,8 @@ public class Utils {
                 .show();
     }
 
-    public static void showDialog(final Activity act, String header, String msg, DialogInterface.OnClickListener listener) {
-        new AlertDialog.Builder(act)
+    public static AlertDialog showDialog(final Activity act, String header, String msg, DialogInterface.OnClickListener listener) {
+        return new AlertDialog.Builder(act)
                 .setTitle(header)
                 .setMessage(msg)
                 .setPositiveButton(android.R.string.ok, listener)
